@@ -1,0 +1,20 @@
+{
+  "name": "we-theme-conference",
+  "version": "0.3.0",
+  "description": "We.js conference theme",
+  "homepage": "https://wejs.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wejs/we-theme-conference"
+  },
+  "main": "theme.js",
+  "dependencies": {
+    "file": "^0.2.2",
+    "recursive-readdir": "^1.2.1"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

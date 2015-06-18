@@ -1,0 +1,20 @@
+<ul class="nav navbar-nav navbar-right">
+  {{#if currentUser}}
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download" aria-expanded="true">Download <span class="caret"></span></a>
+      <ul class="dropdown-menu" aria-labelledby="download">
+        <li><a href="./bootstrap.min.css">bootstrap.min.css</a></li>
+        <li><a href="./bootstrap.css">bootstrap.css</a></li>
+        <li class="divider"></li>
+        <li><a href="./variables.less">variables.less</a></li>
+        <li><a href="./bootswatch.less">bootswatch.less</a></li>
+        <li class="divider"></li>
+        <li><a href="./_variables.scss">_variables.scss</a></li>
+        <li><a href="./_bootswatch.scss">_bootswatch.scss</a></li>
+      </ul>
+    </li>
+  {{else}}
+    <li>{{#link-to 'auth.loginPage'}}{{t "login.block.button.text"}}{{/link-to}}</li>
+    <li>{{#link-to 'auth.signupPage'}}{{t "login.block.form.new.account.link"}}{{/link-to}}</li>
+  {{/if}}
+</ul>
