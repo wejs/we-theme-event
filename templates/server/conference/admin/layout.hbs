@@ -2,7 +2,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">{{this.name}}</div>
     <div class="panel-body">
-      <table class="table table-striped table-bordered table-hover sorted_table" id="dataTables-example">
+      <table we-sortable-table="true" class="table table-striped table-bordered table-hover sorted_table" id="TableWidgetRegion-{{this.name}}">
         <thead>
           <tr>
             <th></th>
@@ -37,8 +37,8 @@
   <div class="panel-heading">{{t 'Widgets'}}</div>
   <div class="panel-body">
 
-    <div class="dataTable_wrapper">
-      <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+    <div>
+      <table class="table table-striped table-bordered table-hover" id="conferenceAdminWidget">
         <thead>
           <tr>
             <th>{{t 'widget.name'}}</th>
@@ -50,11 +50,12 @@
             <tr>
               <td>{{type}}</td>
               <td>
-                <form id="form-add-region-to-{{@key}}" name="layout-widget-selector" class="form-inline">
+                <form id="form-add-region-to-{{@key}}" name="layout-widget-selector" onsubmit="return we.structure.openWidgetForm(event);" class="form-inline" we-form-widget-url="/conference/{{../conference.id}}/admin/widget/create">
                   <span>Add in regions:</span>
                   <input type="hidden" name="type" value="{{type}}" />
                   <input type="hidden" name="theme" value="{{../data.themeName}}" />
                   <input type="hidden" name="layout" value="{{../data.layout}}" />
+                  <input type="hidden" name="context" value="{{../widgetContext}}" />
 
                   <select name="regionName" class="form-control">
                     {{#each ../data.regions}}
@@ -72,22 +73,8 @@
   </div>
 </div>
 
-<div id="AddWidgetFormModal" class="modal" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title">Add widget</h4>
-      </div>
-      <div class="modal-body">
-        <p>Loading ...</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script type="text/javascript">
   $(function() {
-    we.admin.layouts.widgetTableSorter('.sorted_table > tbody');
+    we.admin.layouts.widgetTableSorter('table[we-sortable-table="true"] > tbody');
   });
 </script>
