@@ -36,6 +36,17 @@ module.exports = {
           name: 'Highlighted'
         }
       }
+    },
+    'conferenceAdmin': {
+      template: __dirname + '/templates/server/conference/conference-admin-layout.hbs',
+      regions: {
+        highlighted: {
+          name: 'Highlighted'
+        },
+        sidebar: {
+          name: 'Sidebar'
+        }
+      }
     }
   },
   widgets: {}

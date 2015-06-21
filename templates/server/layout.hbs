@@ -1,7 +1,9 @@
 <div class="container"><div class="row">
   {{#region 'highlighted' class="col col-md-12"}}{{/region}}
 
-  {{#region 'sidebar' class="col col-md-4"}}{{/region}}
-  <content class="col col-md-8">{{{body}}}</content>
+  {{#region 'sidebar' class="col col-md-3"}}{{/region}}
+  <div class="col col-md-9">
+    <h2>{{title}}</h2>
+    {{{body}}}
+  </div>
 </div></div>
-<div id="footer" class="col col-md-12"></div>

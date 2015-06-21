@@ -1,0 +1,23 @@
+{{log this}}
+{{#each cfmenu}}
+  <div class="panel panel-default">
+    <div class="panel-heading">Highlighted</div>
+    <div class="panel-body">
+      <table class="table table-striped table-bordered table-hover sorted_table" id="dataTables-example">
+        <thead>
+          <tr>
+            <th></th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Widget Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody class="ui-sortable">
+        </tbody>
+      </table>
+    </div>
+  </div>
+{{else}}
+  <p>{{t 'conference.admin.menu.empty'}}</p>
+{{/each}}
