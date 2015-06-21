@@ -42,20 +42,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              {{#link-to 'main.index' class="navbar-brand"}}
+              {{#link-to 'conference_findOne' conference.id class="navbar-brand"}}
                 {{#if conference_logo_src}}
                   <img class="img-responsive" src="{{conference_logo_src}}" alt="{{conference.title}} logo">
                 {{else}}<span class="nav-brand-text">{{conference.title}}</span>{{/if}}
               {{/link-to}}
             </div>
             <div class="collapse navbar-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="scroll">{{#link-to 'conference_findOne' conference.id}}{{t 'home'}}{{/link-to}}</li>
-                <li class="scroll"><a href="#event">Localização</a></li>
-                <li class="scroll"><a href="#about">Palestrantes</a></li>
-                <li class="scroll"><a href="#contact">Contato</a></li>
-                {{{template 'user/usermenu'}}}
-              </ul>
+              {{we-cf-menu 'main'}}
             </div>
           </div>
         </div>

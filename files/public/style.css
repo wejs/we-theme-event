@@ -4552,3 +4552,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .we-components-area {
   color: #000;
 }
+
+.cf-admin-menu-title {
+  cursor: pointer;
+}
