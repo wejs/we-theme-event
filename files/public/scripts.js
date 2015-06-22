@@ -1,16 +1,36 @@
 // Theme scripts
+jQuery(function($) {
+  //Countdown js
+  if ($('#countdown') && $('#countdown').countdown) {
+    $('#countdown').countdown({
+      date: "10 july 2017 12:00:00",
+      format: "on"
+    },
 
+    function() {
+      // callback function
+    });
+  }
 
-// ---
-// THEME APP OVERRIDES
-// ---
+  //Scroll Menu
+  function menuToggle()
+  {
+    var windowWidth = $(window).width();
 
-$(function() {
-  App.ApplicationController.reopen({
-    socialLinks: function() {
-      return App.get('configs.client.publicVars.socialLinks');
-    }.property('App.configs.client.publicVars.socialLinks')
-  })
+    if(windowWidth > 767 ){
+      $(window).on('scroll', function(){
+        if( $(window).scrollTop()>405 ){
+          $('.main-nav').addClass('fixed-menu animated slideInDown');
+        } else {
+          $('.main-nav').removeClass('fixed-menu animated slideInDown');
+        }
+      });
+    }else{
+
+      $('.main-nav').addClass('fixed-menu animated slideInDown');
+
+    }
+  }
+
+  menuToggle();
 });
-
-

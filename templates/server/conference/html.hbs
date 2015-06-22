@@ -1,25 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{locale}}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
 
     {{{render-metadata-tags}}}
-
-    <title>{{title}}</title>
-    <script type="text/javascript" src="/public/project/client/bower_components/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/public/plugin/we-core/client/shared/libs/jquery-ui/jquery-ui.min.css">
-
-    <link href="/public/plugin/we-core/files/css/bootstrap.css" rel="stylesheet" type="text/css">
-
     {{{render-stylesheet-tags}}}
+    {{{render-javascript-tags 'header'}}}
 
     <meta name="csrf-token" content="{{_csrf}}" />
-
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
 <body>
@@ -70,10 +60,7 @@
   {{{template 'footer'}}}
 
   {{{render-bootstrap-config}}}
-  <script type="text/javascript" src="/public/plugin/we-core/client/shared/libs/jquery-ui/jquery-ui.min.js"></script>
-  <script src="/public/project/client/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script type="text/javascript" src="/public/project/client/bower_components/page/page.js"></script>
-  <script type="text/javascript" src="/public/plugin/we-core/files/javascript/we.js"></script>
+  {{{render-javascript-tags 'footer'}}}
   <script type="text/javascript">window.we.initialize();</script>
 </body>
 </html>
