@@ -24,29 +24,25 @@
             <a href="#"><i class="fa fa-youtube"></i></a>
           </div>
         </div>
-          <div class="row">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              {{#link-to 'conference_findOne' conference.id class="navbar-brand"}}
-                {{#if conference_logo_src}}
-                  <img class="img-responsive" src="{{conference_logo_src}}" alt="{{conference.title}} logo">
-                {{else}}<span class="nav-brand-text">{{conference.title}}</span>{{/if}}
-              {{/link-to}}
-            </div>
-            <div class="collapse navbar-collapse">
-              {{we-cf-menu 'main'}}
-            </div>
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            {{#link-to 'conference_findOne' conference.id class="navbar-brand"}}
+              {{#if conference_logo_src}}
+                <img class="img-responsive" src="{{conference_logo_src}}" alt="{{conference.title}} logo">
+              {{else}}<span class="nav-brand-text">{{conference.title}}</span>{{/if}}
+            {{/link-to}}
+          </div>
+          <div class="collapse navbar-collapse">
+            {{we-cf-menu 'main'}}
           </div>
         </div>
       </div>
-    </header>
-    <!--/#header-->
-
+    </div>
+  </header>
   <section id="home">
     <div class="highlighted">
     {{#if conference.banner}}
