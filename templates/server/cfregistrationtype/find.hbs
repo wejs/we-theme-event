@@ -38,7 +38,7 @@
     we.components.dataTable('#cfpagetable', {
       where: { conferenceId: {{conference.id}} },
       actionRender: function actionRender(table, data, d,record) {
-        var  tags = ' <a href="/conference/{{conference.id}}/admin/registration/type/'+record.id+'" text="{{t "Edit"}}" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-pencil"></i></a>';
+        var  tags = '<a href="/conference/{{conference.id}}/admin/registration/type/'+record.id+'" text="{{t "Edit"}}" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a>';
         return tags;
       }
     });
