@@ -9,11 +9,11 @@
           <thead>
             <tr>
               <th we-model-attr="id">id</th>
-              <th we-model-attr="name">name</th>
+              <th we-model-attr="name">{{t 'cf.registration.name'}}</th>
               <th we-model-attr="userId">userId</th>
-              <th we-model-attr="displayNamme">displayNamme</th>
-              <th we-model-attr="email">email</th>
-              <th we-model-attr="weModelActions">actions</th>
+              <th we-model-attr="creatificationName">{{t 'userName'}}</th>
+              <th we-model-attr="userEmail">{{t 'user.email'}}</th>
+              <th we-model-attr="weModelActions">{{t 'actions'}}</th>
             </tr>
           </thead>
           <tbody>
@@ -22,8 +22,8 @@
               <td>{{id}}</td>
               <td>{{name}}</td>
               <td>{{userId}}</td>
-              <td>{{displayNamme}}</td>
-              <td>{{email}}</td>
+              <td>{{creatificationName}}</td>
+              <td>{{userEmail}}</td>
               <td></td>
             </tr>
           {{/each}}
