@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
 
+    {{#each conference.favicon}}
+      <link rel="shortcut icon" href="{{urls.thumbnail}}" type="image/x-icon" />
+    {{/each}}
+
     {{{render-metadata-tags}}}
     {{{render-stylesheet-tags}}}
     {{{render-javascript-tags 'header'}}}
@@ -31,9 +35,12 @@
               <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
             {{#link-to 'conference_findOne' conference.id class="navbar-brand"}}
-              {{#if conference_logo_src}}
-                <img class="img-responsive" src="{{conference_logo_src}}" alt="{{conference.title}} logo">
-              {{else}}<span class="nav-brand-text">{{conference.abbreviation}}</span>{{/if}}
+              {{#each conference.logo}}
+                <img class="img-responsive" src="{{urls.medium}}" alt="{{../conference.title}} logo">
+              {{else}}
+                <span class="nav-brand-text">{{conference.abbreviation}}</span>
+              {{/each}}
+
             {{/link-to}}
           </div>
           <div class="collapse navbar-collapse">
@@ -45,9 +52,9 @@
   </header>
   <section id="home">
     <div class="highlighted">
-    {{#if conference.banner}}
-      <img class="event-featured-image" src="{{conference_banner.urls.large}}">
-    {{/if}}
+    {{#each conference.banner}}
+      <img class="event-featured-image img-responsive" src="{{urls.original}}">
+    {{/each}}
     </div>
   </section>
 
