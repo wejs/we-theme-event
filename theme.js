@@ -24,8 +24,22 @@ module.exports = {
         highlighted: {
           name: 'Highlighted'
         },
+        afterContent: {
+          name: 'After content'
+        },
         sidebar: {
           name: 'Sidebar'
+        }
+      }
+    },
+    'conferenceHome': {
+      template: __dirname + '/templates/server/conference-home-layout.hbs',
+      regions: {
+        highlighted: {
+          name: 'Highlighted'
+        },
+        afterContent: {
+          name: 'afterContent'
         }
       }
     },
