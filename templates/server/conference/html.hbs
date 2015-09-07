@@ -34,7 +34,7 @@
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
-            {{#link-to 'conference_findOne' conference.id class="navbar-brand"}}
+            {{#link-to 'conference.findOne' conference.id class="navbar-brand"}}
               {{#each conference.logo}}
                 <img class="img-responsive" src="{{urls.medium}}" alt="{{../conference.title}} logo">
               {{else}}
@@ -44,6 +44,7 @@
             {{/link-to}}
           </div>
           <div class="collapse navbar-collapse">
+            {{we-menu userMenu}}
             {{{we-cf-menu conference.mainMenu}}}
           </div>
         </div>

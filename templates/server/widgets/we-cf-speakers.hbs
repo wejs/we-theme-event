@@ -1,0 +1,21 @@
+<section id="event">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-9">
+        <div id="event-carousel">
+          <h2 class="heading">{{widget.title}}</h2>
+          {{#we-grid items=widget.speakers cols=4}}
+            <div class="single-event">
+              {{#each picture}}{{{we-image this 'medium' class="img-responsive"}}}{{/each}}
+              <h4>{{name}}</h4>
+              <h5>{{about}}</h5>
+            </div>
+          {{/we-grid}}
+        </div>
+      </div>
+      <div class="guitar">
+        <img class="img-responsive" src="/public/theme/we-theme-conference/images/guitar.png" alt="guitar">
+      </div>
+    </div>
+  </div>
+</section>

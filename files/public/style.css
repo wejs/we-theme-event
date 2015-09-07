@@ -1,13 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
-@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
-
-
 /*************************
 *******Typography******
 **************************/
 
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Helvetica', 'sans-serif';
   font-size: 17px;
   color: #fff
 }
@@ -15,7 +11,7 @@ body {
 
 .btn {
   border-radius: 0;
-  font-family: 'Yanone Kaffeesatz','sans-serif';
+  font-family: 'Helvetica','sans-serif';
   font-size: 20px;
   padding: 9px 23px;
 }
@@ -34,7 +30,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Yanone Kaffeesatz', 'sans-serif';
+  font-family: 'Helvetica', 'sans-serif';
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -493,7 +489,7 @@ h2 {
 
 .about-content p {
   font-size: 17px;
-  font-family: 'Dosis',sans-serif;
+  font-family: 'Helvetica',sans-serif;
 }
 
 #about .btn-primary {
@@ -4528,7 +4524,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #we-layout {
   display: block;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   color: #000;
   min-height: 400px;
 }
@@ -4676,6 +4672,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 .event-featured-image {
   overflow: hidden;
+  width: 100%;
 }
 
 
@@ -4686,4 +4683,28 @@ body.conference.findOne .event-featured-image {
   width: 100%;
 }
 
+body.conference.findOne #we-layout {
+  margin-top: 0px;
+}
 
+
+.select2-container,
+.navbar-right .dropdown li a {
+  color: #000;
+}
+
+.navbar-right .dropdown li a {
+  padding: 3px 20px;
+}
+
+.conference-home-layout .widget-we-cf-speakers .widget-header,
+.conference-home-layout .widget-we-cf-partners .widget-header {
+  display: none;
+}
+#sponsor {
+  color: #fff;
+}
+
+.conference-home-layout {
+  color: #fff;
+}

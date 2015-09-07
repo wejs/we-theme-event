@@ -9,6 +9,12 @@
     </ol>
   </div>
 
+{{#unless conference.published}}
+<div class="col-md-12">
+  <div class="alert alert-warning" role="alert">{{t 'conference.not.published.msg'}}</div>
+</div>
+{{/unless}}
+
   {{#region 'sidebar' class="col col-md-3"}}{{/region}}
 
   {{!-- <div id='sidebar' class="col col-md-3">{{{template 'conference/admin/cf-admin-menu'}}}</div> --}}
