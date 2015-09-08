@@ -1,4 +1,4 @@
-# we-theme-conference a we.js theme
+# we-theme-event a we.js theme
 
 
 ## License

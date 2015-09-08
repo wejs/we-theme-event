@@ -252,7 +252,7 @@ h2 {
 
 #explore {
   background-color: #C34C39;
-  background-image: url("/public/theme/we-theme-conference/images/event-bg.jpg");
+  background-image: url("/public/theme/we-theme-event/images/event-bg.jpg");
   background-position: center bottom;
   background-size: contain;
   background-repeat:no-repeat;
@@ -389,7 +389,7 @@ h2 {
 **************************/
 #event {
   background-color: #33888F;
-  background-image: url("/public/theme/we-theme-conference/images/performar-bg.jpg");
+  background-image: url("/public/theme/we-theme-event/images/performar-bg.jpg");
   background-position: 50% 0;
   background-size: contain;
   position: relative;
@@ -475,7 +475,7 @@ h2 {
 
 .about-content {
   width: 50%;
-   background-image: url("/public/theme/we-theme-conference/images/about-bg.jpg");
+   background-image: url("/public/theme/we-theme-event/images/about-bg.jpg");
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -512,7 +512,7 @@ h2 {
 
 #twitter {
   background-color: #ecedef;
-  background-image: url("/public/theme/we-theme-conference/images/twitter-bg.jpg");
+  background-image: url("/public/theme/we-theme-event/images/twitter-bg.jpg");
   background-position: center bottom;
   background-size: cover;
   background-repeat:no-repeat;
@@ -580,7 +580,7 @@ h2 {
 
 #sponsor {
   background-color: #1881a2;
-  background-image: url("/public/theme/we-theme-conference/images/sponsor-bg.jpg");
+  background-image: url("/public/theme/we-theme-event/images/sponsor-bg.jpg");
   background-position:50% 0;
   background-size: cover;
   background-repeat:no-repeat;
@@ -654,7 +654,7 @@ h2 {
 
 .contact-section {
   background-color: #f7ab24;
-  background-image: url("/public/theme/we-theme-conference/images/contact-bg.jpg");
+  background-image: url("/public/theme/we-theme-event/images/contact-bg.jpg");
   background-position:60% 0;
   background-size:contain;
   background-repeat:no-repeat;
@@ -736,7 +736,7 @@ h2 {
 
 #footer {
   background-color: #212121;
-  background-image: url("/public/theme/we-theme-conference/images/footer-bg.jpg");
+  background-image: url("/public/theme/we-theme-event/images/footer-bg.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4529,7 +4529,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   min-height: 400px;
 }
 
-.conference-sidebar {
+.event-sidebar {
   padding-top: 70px;
 }
 
@@ -4676,14 +4676,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 
-body.conference.findOne .highlighted {
+body.event.findOne .highlighted {
   max-height: inherit;
 }
-body.conference.findOne .event-featured-image {
+body.event.findOne .event-featured-image {
   width: 100%;
 }
 
-body.conference.findOne #we-layout {
+body.event.findOne #we-layout {
   margin-top: 0px;
 }
 
@@ -4697,14 +4697,14 @@ body.conference.findOne #we-layout {
   padding: 3px 20px;
 }
 
-.conference-home-layout .widget-we-cf-speakers .widget-header,
-.conference-home-layout .widget-we-cf-partners .widget-header {
+.event-home-layout .widget-we-cf-speakers .widget-header,
+.event-home-layout .widget-we-cf-partners .widget-header {
   display: none;
 }
 #sponsor {
   color: #fff;
 }
 
-.conference-home-layout {
+.event-home-layout {
   color: #fff;
 }

@@ -1,0 +1,15 @@
+{{#if userCfregistration}}
+  {{#ifCond userCfregistration.status 'requested'}}
+    <button class="btn btn-default btn-block btn-lg disabled" type="button">
+      <strong>{{t 'event.btn.requested'}}</strong>
+    </button>
+  {{else}}
+    <a class="btn btn-default btn-block btn-lg" href="/event/{{event.id}}/register">
+      <strong>{{t 'event.btn.registered'}}</strong>
+    </a>
+  {{/ifCond}}
+{{else}}
+  <a class="btn btn-warning btn-block btn-lg" href="/event/{{event.id}}/register">
+    <strong>{{t 'event.btn.register'}}</strong>
+  </a>
+{{/if}}

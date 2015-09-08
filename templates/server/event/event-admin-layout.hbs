@@ -4,20 +4,20 @@
   <div class="col-lg-12">
     <ol class="ember-view breadcrumbs breadcrumb">
       <li class="first current">
-        {{#link-to 'conference_admin' conference.id}}{{t 'home'}}{{/link-to}}
+        {{#link-to 'event_admin' event.id}}{{t 'home'}}{{/link-to}}
       </li>
     </ol>
   </div>
 
-{{#unless conference.published}}
+{{#unless event.published}}
 <div class="col-md-12">
-  <div class="alert alert-warning" role="alert">{{t 'conference.not.published.msg'}}</div>
+  <div class="alert alert-warning" role="alert">{{t 'event.not.published.msg'}}</div>
 </div>
 {{/unless}}
 
   {{#region 'sidebar' class="col col-md-3"}}{{/region}}
 
-  {{!-- <div id='sidebar' class="col col-md-3">{{{template 'conference/admin/cf-admin-menu'}}}</div> --}}
+  {{!-- <div id='sidebar' class="col col-md-3">{{{template 'event/admin/cf-admin-menu'}}}</div> --}}
 
   <div class="col col-md-9">
     <h1 class="page-header">{{title}}</h1>

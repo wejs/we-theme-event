@@ -36,8 +36,8 @@
                     </button>
 
                     {{#link-to 'main.index' class="navbar-brand"}}
-                      {{#if conference_logo_src}}
-                        <img class="img-responsive" src="{{conference_logo_src}}" alt="{{title}} logo">
+                      {{#if event_logo_src}}
+                        <img class="img-responsive" src="{{event_logo_src}}" alt="{{title}} logo">
                       {{else}}
                         <span class="nav-brand-text">{{title}}</span>
                       {{/if}}
@@ -46,7 +46,7 @@
                 <div class="collapse navbar-collapse">
                   <ul class="nav navbar-nav navbar-right">
                     <li class="scroll">{{#link-to 'main.index'}}{{t 'Home'}}{{/link-to}}</li>
-                    <li class="scroll">{{#link-to 'conference.find'}}{{t 'conference.find'}}{{/link-to}}</li>
+                    <li class="scroll">{{#link-to 'event.find'}}{{t 'event.find'}}{{/link-to}}</li>
                     {{{template 'user/usermenu'}}}
                   </ul>
                 </div>
@@ -57,8 +57,8 @@
   <!--/#header-->
   <section id="home">
     <div class="highlighted">
-    {{#if conference.banner}}
-      <img class="event-featured-image" src="{{conference_banner.urls.large}}">
+    {{#if event.banner}}
+      <img class="event-featured-image" src="{{event_banner.urls.large}}">
     {{/if}}
     </div>
   </section>

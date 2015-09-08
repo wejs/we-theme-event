@@ -1,11 +1,11 @@
 {
-  "name": "we-theme-conference",
+  "name": "we-theme-event",
   "version": "0.3.1",
-  "description": "We.js conference theme",
+  "description": "We.js event theme",
   "homepage": "https://wejs.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wejs/we-theme-conference"
+    "url": "https://github.com/wejs/we-theme-event"
   },
   "main": "theme.js",
   "dependencies": {

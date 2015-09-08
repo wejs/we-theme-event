@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
 
-    {{#each conference.favicon}}
+    {{#each event.favicon}}
       <link rel="shortcut icon" href="{{urls.thumbnail}}" type="image/x-icon" />
     {{/each}}
 
@@ -16,7 +16,7 @@
     <meta name="csrf-token" content="{{_csrf}}" />
 </head><!--/head-->
 
-<body class="{{model}} {{model}}-{{id}} cf cf-{{conference.id}} {{action}}">
+<body class="{{model}} {{model}}-{{id}} cf cf-{{event.id}} {{action}}">
   <header id="header" role="banner">
     <div class="main-nav">
       <div class="container">
@@ -34,18 +34,18 @@
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
-            {{#link-to 'conference.findOne' conference.id class="navbar-brand"}}
-              {{#each conference.logo}}
-                <img class="img-responsive" src="{{urls.medium}}" alt="{{../conference.title}} logo">
+            {{#link-to 'event.findOne' event.id class="navbar-brand"}}
+              {{#each event.logo}}
+                <img class="img-responsive" src="{{urls.medium}}" alt="{{../event.title}} logo">
               {{else}}
-                <span class="nav-brand-text">{{conference.abbreviation}}</span>
+                <span class="nav-brand-text">{{event.abbreviation}}</span>
               {{/each}}
 
             {{/link-to}}
           </div>
           <div class="collapse navbar-collapse">
             {{we-menu userMenu}}
-            {{{we-cf-menu conference.mainMenu}}}
+            {{{we-cf-menu event.mainMenu}}}
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@
   </header>
   <section id="home">
     <div class="highlighted">
-    {{#each conference.banner}}
+    {{#each event.banner}}
       <img class="event-featured-image img-responsive" src="{{urls.original}}">
     {{/each}}
     </div>

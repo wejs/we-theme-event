@@ -1,6 +1,6 @@
 /**
  * @module  Theme
- * @name    we-theme-conference
+ * @name    we-theme-event
  */
 
 module.exports = {
@@ -32,8 +32,8 @@ module.exports = {
         }
       }
     },
-    'conferenceHome': {
-      template: __dirname + '/templates/server/conference-home-layout.hbs',
+    'eventHome': {
+      template: __dirname + '/templates/server/event-home-layout.hbs',
       regions: {
         highlighted: {
           name: 'Highlighted'
@@ -51,8 +51,8 @@ module.exports = {
         }
       }
     },
-    'conferenceAdmin': {
-      template: __dirname + '/templates/server/conference/conference-admin-layout.hbs',
+    'eventAdmin': {
+      template: __dirname + '/templates/server/event/event-admin-layout.hbs',
       regions: {
         highlighted: {
           name: 'Highlighted'
