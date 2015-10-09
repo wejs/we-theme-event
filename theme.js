@@ -19,7 +19,7 @@ module.exports = {
   // set layouts here
   layouts: {
     'default': {
-      template: __dirname + '/templates/server/layout.hbs',
+      template: __dirname + '/templates/server/layouts/layout.hbs',
       regions: {
         highlighted: {
           name: 'Highlighted'
@@ -33,7 +33,7 @@ module.exports = {
       }
     },
     'eventHome': {
-      template: __dirname + '/templates/server/event-home-layout.hbs',
+      template: __dirname + '/templates/server/layouts/event-home-layout.hbs',
       regions: {
         highlighted: {
           name: 'Highlighted'
@@ -44,7 +44,7 @@ module.exports = {
       }
     },
     'fullwidth': {
-      template: __dirname + '/templates/server/full-width-layout.hbs',
+      template: __dirname + '/templates/server/layouts/full-width-layout.hbs',
       regions: {
         highlighted: {
           name: 'Highlighted'
@@ -52,7 +52,7 @@ module.exports = {
       }
     },
     'eventAdmin': {
-      template: __dirname + '/templates/server/event/event-admin-layout.hbs',
+      template: __dirname + '/templates/server/layouts/event-admin-layout.hbs',
       regions: {
         highlighted: {
           name: 'Highlighted'
