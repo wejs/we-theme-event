@@ -17,6 +17,7 @@
 </head><!--/head-->
 
 <body class="{{model}} {{model}}-{{id}} cf cf-{{event.id}} {{action}}">
+  {{we-event event="we-html-body-start"}}
   <header id="header" role="banner">
     <div class="main-nav">
       <div class="container">
@@ -62,6 +63,5 @@
   {{{layoutHtml}}}
 
   {{{template 'footer'}}}
-  {{{render-client-component-templates}}}
 </body>
 </html>
