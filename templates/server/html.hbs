@@ -15,6 +15,7 @@
 </head><!--/head-->
 
 <body>
+  {{we-event event="we-html-body-start"}}
   <header id="header" role="banner">
     <div class="main-nav">
       <div class="container">
@@ -65,7 +66,10 @@
   {{{layoutHtml}}}
 
   {{{template 'footer'}}}
-  {{{render-client-component-templates}}}
 
+  {{{render-bootstrap-config}}}
+  {{{render-javascript-tags 'footer'}}}
+  {{{render-client-component-templates}}}
+  {{we-event event="we-html-body-end"}}
 </body>
 </html>
