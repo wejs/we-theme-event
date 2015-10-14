@@ -29,26 +29,25 @@
             <a href="#"><i class="fa fa-youtube"></i></a>
           </div>
         </div>
-        <div class="row">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-            </button>
-            {{#link-to 'event.findOne' event.id class="navbar-brand"}}
-              {{#each event.logo}}
-                <img class="img-responsive" src="{{urls.medium}}" alt="{{../event.title}} logo">
-              {{else}}
-                <span class="nav-brand-text">{{event.abbreviation}}</span>
-              {{/each}}
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          {{#link-to 'event.findOne' event.id class="navbar-brand"}}
+            {{#each event.logo}}
+              <img class="img-responsive" src="{{urls.medium}}" alt="{{../event.title}} logo">
+            {{else}}
+              <span class="nav-brand-text">{{event.abbreviation}}</span>
+            {{/each}}
 
-            {{/link-to}}
-          </div>
-          <div class="collapse navbar-collapse">
-            {{we-menu userMenu}}
-            {{{we-cf-menu event.mainMenu}}}
-          </div>
+          {{/link-to}}
         </div>
+        <div class="collapse navbar-collapse">
+          {{we-menu userMenu}}
+          {{{we-cf-menu event.mainMenu}}}
+        </div>
+
       </div>
     </div>
   </header>

@@ -27,31 +27,28 @@
             <a href="#"><i class="fa fa-youtube"></i></a>
           </div>
         </div>
-            <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
 
-                    {{#link-to 'main.index' class="navbar-brand"}}
-                      {{#if event_logo_src}}
-                        <img class="img-responsive" src="{{event_logo_src}}" alt="{{title}} logo">
-                      {{else}}
-                        <span class="nav-brand-text">{{title}}</span>
-                      {{/if}}
-                    {{/link-to}}
-                </div>
-                <div class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav navbar-right">
-                    <li class="scroll">{{#link-to 'main.index'}}{{t 'Home'}}{{/link-to}}</li>
-                    <li class="scroll">{{#link-to 'event.find'}}{{t 'event.find'}}{{/link-to}}</li>
-                    {{{template 'user/usermenu'}}}
-                  </ul>
-                </div>
-            </div>
+              {{#link-to 'main.index' class="navbar-brand"}}
+                {{#if event_logo_src}}
+                  <img class="img-responsive" src="{{event_logo_src}}" alt="{{title}} logo">
+                {{else}}
+                  <span class="nav-brand-text">{{title}}</span>
+                {{/if}}
+              {{/link-to}}
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="scroll">{{#link-to 'main.index'}}{{t 'Home'}}{{/link-to}}</li>
+              <li class="scroll">{{#link-to 'event.find'}}{{t 'event.find'}}{{/link-to}}</li>
+              {{{template 'user/usermenu'}}}
+            </ul>
           </div>
         </div>
     </header>

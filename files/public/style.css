@@ -4708,3 +4708,7 @@ body.event.findOne #we-layout {
 .event-home-layout {
   color: #fff;
 }
+
+#event {
+  min-height: 510px;
+}
