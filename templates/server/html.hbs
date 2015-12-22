@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{locale}}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     {{{render-metadata-tags}}}
-
     <title>{{title}}</title>
-
     {{{render-stylesheet-tags}}}
     {{{render-javascript-tags 'header'}}}
-
-    <meta name="csrf-token" content="{{_csrf}}" />
-</head><!--/head-->
-
+    {{#if _csrf}}<meta name="csrf-token" content="{{_csrf}}" />{{/if}}
+</head>
 <body>
   {{we-event event="we-html-body-start"}}
   <header id="header" role="banner">
@@ -21,27 +16,27 @@
       <div class="container">
         <div class="header-top">
           <div class="pull-right social-icons">
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><span class="fa fa-twitter"></span></a>
+            <a href="#"><span class="fa fa-facebook"></span></a>
+            <a href="#"><span class="fa fa-google-plus"></span></a>
+            <a href="#"><span class="fa fa-youtube"></span></a>
           </div>
         </div>
           <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-              {{#link-to 'main.index' class="navbar-brand"}}
-                {{#if event_logo_src}}
-                  <img class="img-responsive" src="{{event_logo_src}}" alt="{{title}} logo">
-                {{else}}
-                  <span class="nav-brand-text">{{title}}</span>
-                {{/if}}
-              {{/link-to}}
+            {{#link-to 'main.index' class="navbar-brand"}}
+              {{#if event_logo_src}}
+                <img class="img-responsive" src="{{event_logo_src}}" alt="{{title}} logo">
+              {{else}}
+                <span class="nav-brand-text">{{title}}</span>
+              {{/if}}
+            {{/link-to}}
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -52,7 +47,6 @@
           </div>
         </div>
     </header>
-  <!--/#header-->
   <section id="home">
     <div class="highlighted">
     {{#if event.banner}}
