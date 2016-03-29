@@ -743,6 +743,7 @@ h2 {
   color: #FFFFFF;
   font-size: 20px;
   padding: 35px 0;
+  margin-top: 20px;
 }
 
 #footer a {
@@ -4711,4 +4712,47 @@ body.event.findOne #we-layout {
 
 #event {
   min-height: 510px;
+}
+
+
+body.event.findOne .widget-we-cf-location-map {
+  text-align: center;
+  margin-top: 30px;
+}
+
+body.event.findOne .we-cf-location-map-iframe-title {
+  margin-top: 50px;
+}
+
+.we-cf-location-map-iframe {
+  margin: 15px 0px;
+}
+
+.article-featured-image {
+  float: left;
+  margin: 5px 10px 5px 0px;
+}
+
+article.teaser h2.teaser-title {
+  margin-top: 5px;
+}
+
+.article-actions {
+  margin: 5px 0px;
+}
+
+.article-meta {
+  font-size: 0.7em;
+  margin-top: 5px;
+}
+
+.actions {
+  margin: 5px 0px;
+}
+
+body.event.findOne .widget-we-cf-location-map,
+body.event.findOne .widget-we-cf-news {
+  border-top: 1px solid #eee;
+  color: #000;
+  margin: 10px 20px;
 }
