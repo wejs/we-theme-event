@@ -743,7 +743,6 @@ h2 {
   color: #FFFFFF;
   font-size: 20px;
   padding: 35px 0;
-  margin-top: 20px;
 }
 
 #footer a {
@@ -4509,9 +4508,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: zoomOutUp;
 }
 
-/** custom we.sj theme css */
+/** custom we.js theme css */
 .highlighted {
-  min-height: 170px;
+  min-height: 196px;
   background-color: #444;
 }
 
@@ -4663,10 +4662,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .navbar-brand img {
-  max-height: 165px;
+  max-height: 130px;
 }
-
-
 
 .highlighted {
   max-height: 197px;
@@ -4675,7 +4672,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   overflow: hidden;
   width: 100%;
 }
-
 
 body.event.findOne .highlighted {
   max-height: inherit;
@@ -4687,7 +4683,6 @@ body.event.findOne .event-featured-image {
 body.event.findOne #we-layout {
   margin-top: 0px;
 }
-
 
 .select2-container,
 .navbar-right .dropdown li a {
@@ -4779,7 +4774,12 @@ h1.page-header {
 table.table th {
   text-transform: capitalize;
 }
+
 table.table td .btn.btn-sm {
   font-size: 12px;
   padding: 4px 8px;
+}
+
+#cfcontact .g-recaptcha {
+  margin-bottom: 15px
 }

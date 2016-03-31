@@ -13,20 +13,25 @@
     {{{render-stylesheet-tags}}}
     {{{render-javascript-tags 'header'}}}
 
-    <meta name="csrf-token" content="{{_csrf}}" />
-</head><!--/head-->
-
+    {{#if _csrf}}<meta name="csrf-token" content="{{_csrf}}" />{{/if}}
+</head>
 <body class="{{model}} {{model}}-{{id}} cf cf-{{event.id}} {{action}}">
   {{we-event event="we-html-body-start"}}
   <header id="header" role="banner">
     <div class="main-nav">
       <div class="container">
         <div class="header-top">
+          {{#can permission='manage_event' roleNames=req.userRoleNames}}
+            <div class="pull-right social-icons">
+              <ul class="list-inline join-us"><li>
+                {{#link-to 'event_admin' event.id class="btn btn-empty-inverse btn-lg"}}
+                  <span class="glyphicon glyphicon-cog"> Admin</span>
+                {{/link-to}}
+              </li></ul>
+            </div>
+          {{/can}}
           <div class="pull-right social-icons">
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
+            {{{we-cf-menu event.socialMenu}}}
           </div>
         </div>
         <div class="navbar-header">
@@ -40,7 +45,6 @@
             {{else}}
               <span class="nav-brand-text">{{event.abbreviation}}</span>
             {{/each}}
-
           {{/link-to}}
         </div>
         <div class="collapse navbar-collapse">
