@@ -1,8 +1,11 @@
 <div class="container"><div class="row">
+
+  <div class="col-md-12">{{we-breadcrumb locals=this}}</div>
+
   {{#region 'highlighted' class="col col-md-12"}}{{/region}}
 
   <div id="content" role="main" class="col col-md-9">
-    <h2 class="page-header">{{title}}</h2>
+    <h1 class="page-header">{{title}}</h1>
 
     <div id="sysMessagesArea">{{{we-messages}}}</div>
 

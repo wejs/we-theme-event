@@ -4753,13 +4753,33 @@ article.teaser h2.teaser-title {
 body.event.findOne .widget-we-cf-video,
 body.event.findOne .widget-we-cf-schedule,
 body.event.findOne .widget-we-cf-location-map,
-body.event.findOne .widget-we-cf-news {
-  border-top: 1px solid #eee;
+body.event.findOne .widget-we-cf-news,
+body.event.findOne .widget-we-cf-topics {
   color: #000;
-  margin: 10px 20px;
+  margin: 20px;
+}
+
+body.event.findOne .widget-header > h3 {
+  text-align: center;
 }
 
 .widget-we-cf-video {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+h1.page-header {
+  margin-top: 20px;
+}
+
+#about {
+  padding-bottom: 20px;
+}
+
+table.table th {
+  text-transform: capitalize;
+}
+table.table td .btn.btn-sm {
+  font-size: 12px;
+  padding: 4px 8px;
 }
