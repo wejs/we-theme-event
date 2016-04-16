@@ -4783,3 +4783,7 @@ table.table td .btn.btn-sm {
 #cfcontact .g-recaptcha {
   margin-bottom: 15px
 }
+
+#region-sidebar-widgets {
+  margin-bottom: 15px;
+}
