@@ -118,7 +118,7 @@ h2 {
 
 .navbar-right li a {
   padding: 35px 21px;
-  font-size: 17px;
+  font-size: 16px;
   color: #fff;
   text-transform: uppercase;
   font-family: 'Yanone Kaffeesatz', 'sans-serif';
@@ -4784,6 +4784,7 @@ table.table td .btn.btn-sm {
   margin-bottom: 15px
 }
 
+#content.col-md-9,
 #region-sidebar-widgets {
   margin-bottom: 15px;
 }
