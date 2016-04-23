@@ -25,6 +25,15 @@ module.exports.themes = {
 };
 ```
 
+And add in config/event.js
+```js
+module.exports.event = {
+  themes: ['we-theme-event'],
+  defaultTheme: 'we-theme-event'
+};
+```
+
+
 ## Build with: 
 
 Evento free theme: https://shapebootstrap.net/item/1524963-evento-free-music-event-template
