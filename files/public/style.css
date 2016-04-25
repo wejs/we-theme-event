@@ -4788,3 +4788,37 @@ table.table td .btn.btn-sm {
 #region-sidebar-widgets {
   margin-bottom: 15px;
 }
+
+#site-menu {
+  position: fixed;
+  left: 0px;
+  z-index: 1000;
+  top: 38%;
+  font-size: 26px;
+}
+#site-menu ul {
+  list-style: none;
+  padding-left: 0px;
+}
+#site-menu li {
+  padding-top: 10px;
+}
+#site-menu a {
+  border: 1px solid #000;
+  border-radius: 7px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.events-icon {
+  color: #ED143D
+}
+.home-icon {
+  color: #000;
+}
+.twitter-icon {
+  color: #0FB5EE;
+}
+.facebook-color {
+  color: #4A66A0;
+}
