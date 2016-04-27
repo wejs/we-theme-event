@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
+    <title>{{#if title}}{{title}} | {{/if}}{{req.we.config.appName}}</title>
 
     {{#each event.favicon}}
       <link rel="shortcut icon" href="{{urls.thumbnail}}" type="image/x-icon" />
@@ -15,7 +15,7 @@
 
     {{#if _csrf}}<meta name="csrf-token" content="{{_csrf}}" />{{/if}}
 </head>
-<body class="{{model}} {{model}}-{{id}} cf cf-{{event.id}} {{action}}">
+<body class="{{#if model}}{{model}} {{model}}-{{id}}{{/if}} {{action}}">
   {{we-event event="we-html-body-start"}}
   {{{template 'partials/header'}}}
   <section id="home">
