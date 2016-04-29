@@ -4801,15 +4801,18 @@ table.table td .btn.btn-sm {
   padding-left: 0px;
 }
 #site-menu li {
-  padding-top: 10px;
+  padding-top: 1px;
 }
 #site-menu a {
   border: 1px solid #000;
   border-radius: 7px;
   padding: 10px;
   background-color: #fff;
+  display: block;
 }
-
+#site-menu a span {
+  display: block;
+}
 .events-icon {
   color: #ED143D
 }
