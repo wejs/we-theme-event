@@ -4825,3 +4825,8 @@ table.table td .btn.btn-sm {
 .facebook-color {
   color: #4A66A0;
 }
+
+.navbar-default .navbar-nav > li > a.btn-main-menu-create-event,
+.btn-main-menu-create-event {
+  color: #fff;
+}
