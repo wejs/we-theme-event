@@ -1,0 +1,280 @@
+<section id="explore">
+  <div class="container">
+    <div class="row">
+      <div class="watch">
+        <img class="img-responsive" src="/public/theme/we-theme-event/images/watch.png" alt="">
+      </div>
+      <div class="col-md-4 col-md-offset-2 col-sm-5">
+        <h2>{{t 'event.home.startDate'}}:</h2>
+      </div>
+      <div class="col-sm-7 col-md-6">
+        <ul id="countdown">
+          <li>
+            <span class="days time-font">{{we-date event.eventStartDate 'MM'}}</span>
+            <p>{{t 'event.month'}}</p>
+          </li>
+          <li>
+            <span class="hours time-font">{{we-date event.eventStartDate 'DD'}}</span>
+            <p class="">{{t 'event.days'}}</p>
+          </li>
+          <li>
+            <span class="minutes time-font">{{we-date event.eventStartDate 'HH'}}</span>
+            <p class="">{{t 'event.hours'}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    {{#if-have-plugin 'we-plugin-event-ticket'}}
+      <div class="cart">
+        <a href="#tickets"><i class="fa fa-shopping-cart"></i> <span>{{t 'tickets.purchase'}}</span></a>
+      </div>
+    {{/if-have-plugin}}
+  </div>
+</section>
+
+<section id="about">
+  <div class="guitar2">
+    <img class="img-responsive" src="/public/theme/we-theme-event/images/guitar2.jpg" alt="guitar">
+    <div style="width:260px; float:right;">{{we-cf-registration-btn class="btn btn-block btn-lg" event=event locals=this userCfregistration=userCfregistration}}</div>
+  </div>
+  <div id="content" role="main" class="about-content">
+    <h1>{{title}}</h1>
+
+    <div class="event-about">{{{data.about}}}</div>
+    <br>
+    <p class="event-dates">
+      {{#with data}}
+        <strong>{{t 'event.dates'}}:</strong> {{we-cf-date-range start=eventStartDate end=eventEndDate __=../__}}
+      {{/with}}
+    </p>
+    <p class="event-contact">
+      <strong>{{t 'form-event-about-email'}}</strong>: {{data.email}}
+      <br>
+      <strong>{{t "form-event-about-registrationManagerName"}}</strong>: {{data.registrationManagerName}}
+      <br>
+      <strong>{{t 'form-event-about-registrationManagerEmail'}}</strong>: {{data.registrationManagerEmail}}
+    </p>
+  </div>
+</section>
+
+{{#if-have-plugin 'we-plugin-event-ticket'}}
+<div id="tickets">
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>{{t 'Ticket'}}</th>
+          <th>{{t 'Price'}}</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>data</td>
+          <td>data</td>
+          <td>data</td>
+          <td>data</td>
+        </tr>
+        <tr>
+          <td>data</td>
+          <td>data</td>
+          <td>data</td>
+          <td>data</td>
+        </tr>
+        <tr>
+          <td>data</td>
+          <td>data</td>
+          <td>data</td>
+          <td>data</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{{/if-have-plugin}}
+
+{{#if-have-plugin 'we-plugin-event-speaker'}}
+<section id="event">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-9">
+        <div id="event-carousel" class="carousel slide" data-interval="false">
+          <h2 class="heading">THE ROCKING Performers</h2>
+          <a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+          <a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="single-event">
+                    <img class="img-responsive" src="/public/theme/we-theme-event/images/event/event1.jpg" alt="event-image">
+                    <h4>Chester Bennington</h4>
+                    <h5>Vocal</h5>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="single-event">
+                    <img class="img-responsive" src="/public/theme/we-theme-event/images/event/event2.jpg" alt="event-image">
+                    <h4>Mike Shinoda</h4>
+                    <h5>vocals, rhythm guitar</h5>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="single-event">
+                    <img class="img-responsive" src="/public/theme/we-theme-event/images/event/event3.jpg" alt="event-image">
+                    <h4>Rob Bourdon</h4>
+                    <h5>drums</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="single-event">
+                    <img class="img-responsive" src="/public/theme/we-theme-event/images/event/event1.jpg" alt="event-image">
+                    <h4>Chester Bennington</h4>
+                    <h5>Vocal</h5>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="single-event">
+                    <img class="img-responsive" src="/public/theme/we-theme-event/images/event/event2.jpg" alt="event-image">
+                    <h4>Mike Shinoda</h4>
+                    <h5>vocals, rhythm guitar</h5>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="single-event">
+                    <img class="img-responsive" src="/public/theme/we-theme-event/images/event/event3.jpg" alt="event-image">
+                    <h4>Rob Bourdon</h4>
+                    <h5>drums</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="guitar">
+        <img class="img-responsive" src="/public/theme/we-theme-event/images/guitar.png" alt="guitar">
+      </div>
+    </div>
+  </div>
+</section>
+{{/if-have-plugin}}
+{{#if-have-plugin 'we-plugin-event-sponsor'}}
+<div id="sponsor">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10">
+        <h2>{{widget.title}}</h2>
+        <div class="carousel-inner">
+          <div class="item active">
+            <ul>
+              {{#each widget.partners}}
+                <li>
+                {{#if link}}
+                  <a target="_blank" href="{{link}}">{{#each logo}}{{we-image this 'medium' class="img-responsive img-thumbnail"}}{{/each}}</a>
+                {{else}}
+                  {{#each logo}}{{we-image this 'medium' class="img-responsive"}}{{/each}}
+                {{/if}}
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="light">
+    <img class="img-responsive" src="/public/theme/we-theme-event/images/light.png">
+  </div>
+</div>
+{{/if-have-plugin}}
+{{#if-have-plugin 'we-plugin-google-maps'}}
+<div id="map">
+  <div id="gmap-wrap">
+    <div id="event-home-gmap" data-latitude="{{data.latitude}}" data-longitude="{{data.longitude}}" data-title="{{data.title}}">
+    </div>
+  </div>
+</div><!--/#map-->
+{{/if-have-plugin}}
+{{#if-have-plugin 'we-plugin-event-contact'}}
+<section id="contact">
+  <div class="contact-section">
+    <div class="ear-piece">
+      <img class="img-responsive" src="/public/theme/we-theme-event/images/ear-piece.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-4">
+          <div class="contact-text">
+            <h3>{{t 'Contact'}}</h3>
+            <address>
+              E-mail: {{data.email}}<br>
+              {{t 'form-event-about-registrationManagerName'}}: {{data.registrationManagerName}}
+            </address>
+          </div>
+          <div class="contact-address">
+            <h3>{{t 'form-event-location'}}</h3>
+            <address>
+              {{data.location}}<br>
+            </address>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div id="contact-section">
+            <h3>Send a message</h3>
+            <div class="status alert alert-success" style="display: none"></div>
+            <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" required="required" placeholder="Email ID">
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" required="required" class="form-control" rows="4" placeholder="Enter your message"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary pull-right">Send</button>
+              </div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{else}}
+
+<section id="contact">
+  <div class="contact-section">
+    <div class="ear-piece">
+      <img class="img-responsive" src="/public/theme/we-theme-event/images/ear-piece.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-6">
+          <div class="contact-text">
+            <h3>{{t 'Contact'}}</h3>
+            <address>
+              {{t 'E-mail'}}: {{data.email}}<br>
+              {{t 'form-event-about-registrationManagerName'}}: {{data.registrationManagerName}}
+            </address>
+          </div>
+          <div class="contact-address">
+            <h3>{{t 'form-event-location'}}</h3>
+            <address>
+              {{data.location}}<br>
+            </address>
+          </div>
+        </div>
+        <div class="col-sm-5"></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{/if-have-plugin}}

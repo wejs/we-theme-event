@@ -9,7 +9,11 @@
   </div>
   {{/unless}}
 
-  {{#region 'sidebar' class="col col-md-3"}}{{/region}}
+  <div id="sidebar" class="col col-md-3">
+    <div class="event-admin-menu">
+      {{we-menu eventAdminMenu}}
+    </div>
+  </div>
 
   <div id="content" role="main" class="col col-md-9">
     <h1 class="page-header">{{title}}</h1>

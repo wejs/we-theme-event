@@ -641,9 +641,10 @@ h2 {
 **************************/
 #map {
   position: relative;
+  color: #000;
 }
 
-#gmap {
+#event-home-gmap {
   height:450px;
 }
 
@@ -4829,4 +4830,8 @@ table.table td .btn.btn-sm {
 .navbar-default .navbar-nav > li > a.btn-main-menu-create-event,
 .btn-main-menu-create-event {
   color: #fff;
+}
+
+#tickets {
+  background-color: #75B46E;
 }

@@ -56,15 +56,12 @@ module.exports = {
       regions: {
         highlighted: {
           name: 'Highlighted'
-        },
-        sidebar: {
-          name: 'Sidebar'
         }
       }
     }
   },
   widgets: {
-    'we-cf-speakers': __dirname + '/templates/server/widgets/we-cf-speakers.hbs',
+    // 'we-cf-speakers': __dirname + '/templates/server/widgets/we-cf-speakers.hbs',
     // 'we-cf-schedule': __dirname + '/templates/server/widgets/we-cf-schedule.hbs',
     'we-cf-partners': __dirname + '/templates/server/widgets/we-cf-partners.hbs',
     // 'we-cf-topics': __dirname + '/templates/server/widgets/we-cf-topics.hbs',
