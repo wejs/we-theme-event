@@ -3,15 +3,16 @@
   <div class="col-md-12">{{we-breadcrumb locals=this}}</div>
 
   {{#region 'highlighted' class="col col-md-12"}}{{/region}}
+  <div id="region-content">
+    <div id="content" role="main" class="col col-md-9">
+      <h1 class="page-header">{{title}}</h1>
 
-  <div id="content" role="main" class="col col-md-9">
-    <h1 class="page-header">{{title}}</h1>
+      <div id="sysMessagesArea">{{{we-messages}}}</div>
 
-    <div id="sysMessagesArea">{{{we-messages}}}</div>
+      {{{body}}}
 
-    {{{body}}}
-
-    {{#region 'afterContent'}}{{/region}}
+      {{#region 'afterContent'}}{{/region}}
+    </div>
   </div>
   {{#region 'sidebar' class="col col-md-3"}}{{/region}}
 </div></div>

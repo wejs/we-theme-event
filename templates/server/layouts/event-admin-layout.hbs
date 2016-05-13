@@ -4,22 +4,24 @@
   <div class="col-md-12">{{we-breadcrumb locals=this}}</div>
 
   {{#unless event.published}}
-  <div class="col-md-12">
-    <div class="alert alert-warning" role="alert">{{t 'event.not.published.msg'}}</div>
-  </div>
+    <div class="col-md-12">
+      <div class="alert alert-warning" role="alert">{{t 'event.not.published.msg'}}</div>
+    </div>
   {{/unless}}
 
   <div id="sidebar" class="col col-md-3">
     <div class="event-admin-menu">
+      <h3 class="event-admin-menu-title">{{t 'event.admin.menu.title'}}</h3>
       {{we-menu eventAdminMenu}}
     </div>
   </div>
+  <div id="region-content">
+    <div id="content" role="main" class="col col-md-9">
+      <h1 class="page-header event-admin-page-title">{{title}}</h1>
 
-  <div id="content" role="main" class="col col-md-9">
-    <h1 class="page-header">{{title}}</h1>
+      <div id="sysMessagesArea">{{{we-messages}}}</div>
 
-    <div id="sysMessagesArea">{{{we-messages}}}</div>
-
-    {{{body}}}
+      {{{body}}}
+    </div>
   </div>
 </div></div>

@@ -36,7 +36,7 @@
         {{#can permission='manage_event' roleNames=req.userRoleNames}}
           <div class="pull-right social-icons">
             <ul class="list-inline join-us"><li>
-              {{#link-to 'event_admin' event.id class="btn btn-empty-inverse btn-lg"}}
+              {{#link-to 'event.admin' event.id class="btn btn-empty-inverse btn-lg"}}
                 <span class="glyphicon glyphicon-cog"> Admin</span>
               {{/link-to}}
             </li></ul>
