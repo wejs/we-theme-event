@@ -35,7 +35,6 @@
 <section id="about">
   <div class="guitar2">
     <img class="img-responsive" src="/public/theme/we-theme-event/images/guitar2.jpg" alt="guitar">
-    <div style="width:260px; float:right;">{{we-cf-registration-btn class="btn btn-block btn-lg" event=event locals=this userCfregistration=userCfregistration}}</div>
   </div>
   <div id="content" role="main" class="about-content">
     <h1>{{title}}</h1>
@@ -48,11 +47,11 @@
       {{/with}}
     </p>
     <p class="event-contact">
-      <strong>{{t 'form-event-about-email'}}</strong>: {{data.email}}
+      <strong>{{t 'form-event-email'}}</strong>: {{data.email}}
       <br>
-      <strong>{{t "form-event-about-registrationManagerName"}}</strong>: {{data.registrationManagerName}}
+      <strong>{{t "form-event-registrationManagerName"}}</strong>: {{data.registrationManagerName}}
       <br>
-      <strong>{{t 'form-event-about-registrationManagerEmail'}}</strong>: {{data.registrationManagerEmail}}
+      <strong>{{t 'form-event-registrationManagerEmail'}}</strong>: {{data.registrationManagerEmail}}
     </p>
   </div>
 </section>
@@ -60,36 +59,7 @@
 {{#if-have-plugin 'we-plugin-event-ticket'}}
 <div id="tickets">
   <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>{{t 'Ticket'}}</th>
-          <th>{{t 'Price'}}</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>data</td>
-          <td>data</td>
-          <td>data</td>
-          <td>data</td>
-        </tr>
-        <tr>
-          <td>data</td>
-          <td>data</td>
-          <td>data</td>
-          <td>data</td>
-        </tr>
-        <tr>
-          <td>data</td>
-          <td>data</td>
-          <td>data</td>
-          <td>data</td>
-        </tr>
-      </tbody>
-    </table>
+    {{{template ticketsSelectorTemplate}}}
   </div>
 </div>
 {{/if-have-plugin}}
@@ -214,7 +184,7 @@
             <h3>{{t 'Contact'}}</h3>
             <address>
               E-mail: {{data.email}}<br>
-              {{t 'form-event-about-registrationManagerName'}}: {{data.registrationManagerName}}
+              {{t 'form-event-registrationManagerName'}}: {{data.registrationManagerName}}
             </address>
           </div>
           <div class="contact-address">
@@ -262,7 +232,7 @@
             <h3>{{t 'Contact'}}</h3>
             <address>
               {{t 'E-mail'}}: {{data.email}}<br>
-              {{t 'form-event-about-registrationManagerName'}}: {{data.registrationManagerName}}
+              {{t 'form-event-registrationManagerName'}}: {{data.registrationManagerName}}
             </address>
           </div>
           <div class="contact-address">

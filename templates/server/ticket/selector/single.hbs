@@ -1,0 +1,43 @@
+<h2>{{t 'Tickets'}}</h2>
+<form>
+<div class="table-responsive">
+  <table id="ticketsTable" class="table table-hover event-ticket-type-table">
+    <thead>
+      <tr>
+        <th>{{t 'Ticket'}}</th>
+        <th>{{t 'Price'}}</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each metadata.eventTicketTypes}}
+        <tr class="event-ticket-type-item">
+          <td>
+            <h4>{{name}}</h4>
+            <div class="event-ticket-type-description">{{description}}</div>
+          </td>
+          <td class="event-ticket-type-price">
+            {{#if price}}
+              {{price}}
+            {{else}}
+              {{t 'eventTicketType.price.free'}}
+            {{/if}}
+          </td>
+          <td class="event-ticket-type-end-date">
+            {{#if endData}}
+              {{we-date ../event.endDate 'll'}}
+            {{else}}
+              {{we-date ../event.eventEndDate 'll'}}
+            {{/if}}
+          </td>
+          <td class="event-ticket-type-quantity">
+            <input type="hidden" name="qt_{{id}}" value="1">
+            <button id="ticketsSubmit" type="submit" class="btn btn-success">{{t 'tickets.purchase'}}</button>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+</form>
